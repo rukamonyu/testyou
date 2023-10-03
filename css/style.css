@@ -317,3 +317,8 @@ aside p {
     margin-bottom: 50px;
 }
 
+/*ユーザー情報
+---------------------------------------------------------------*/
+#u_info {
+    background-image: linear-gradient(#c9ffbf, #ffafbd);
+}
