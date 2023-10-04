@@ -25,11 +25,12 @@ img {
     margin-top: 14px;
 }
 
-/*HOME,MENU,CONTACTの文字の設定*/
+/*ヘッダーの文字の設定*/
 .main-nav {
     display: flex;
     font-size: 1.25rem;
-    text-transform: uppercase;
+    /*text-transform: uppercase;  大文字にする*/
+    text-transform: lowercase;
     margin-top: 34px;
     list-style: none;
 }
@@ -42,7 +43,7 @@ img {
 .main-nav a:hover {
     color: #0bd;
 }
-/*右にずらす*/
+/*右にずらし余白を均等に割り振る*/
 .page-header {
     display: flex;
     justify-content: space-between;
@@ -52,6 +53,10 @@ img {
     max-width: 3100px;/*1100px がいいかも*/
     margin: 0 auto;
     padding: 0 4%;
+}
+/*文字のグレーアウト*/
+.grayout {
+    color: #bfbfbf;
 }
 
 /*　homes
@@ -73,7 +78,8 @@ img {
     font-weight: normal;
 }
 
-/*ボタン*/
+/*ボタン
+---------------------------------------------------------*/
 .button {
     font-size: 1.375rem;
     background: #0bd;
@@ -82,6 +88,16 @@ img {
     padding: 18px 32px;
 }
 .button:hover {
+    background: #0090aa;
+}
+.h-button {
+    font-size: 0.688rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 9px 16px;
+}
+.h-button:hover {
     background: #0090aa;
 }
 
@@ -319,6 +335,34 @@ aside p {
 
 /*ユーザー情報
 ---------------------------------------------------------------*/
-#u_info {
+#user_info1 {
     background-image: linear-gradient(#c9ffbf, #ffafbd);
 }
+.container {
+    font-size: 67px;
+    margin: 25px auto; /* 左右のマージンを自動調整して中央に配置 */
+    margin-top: 50px;
+    width: 800px;
+    height: 450px;
+    outline: dashed 1px black;
+}
+.container p {
+    /* 水平方向の中央揃え */
+    text-align: center;
+}
+
+#user_info2 .input-text {
+    width: 300px;
+    padding-top: 25px;
+    padding-left: 25px;
+    letter-spacing: 0.1em;/*文字の間隔*/
+    line-height: 2.0;/*上下の間隔*/
+    font-size: 20px;
+    text-align: left;
+}
+/*枠組み pass*/
+input[type="password"] {
+    border: 1px solid #ccc; /* ボーダーのスタイルを設定 */
+    padding: 5px; /* ボーダー内の余白を設定 */
+    width: 150px; /* テキストボックスの幅を設定 */
+  }
