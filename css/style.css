@@ -25,7 +25,7 @@ img {
     margin-top: 14px;
 }
 
-/*NEWS,MENU,CONTACTの文字の設定*/
+/*HOME,MENU,CONTACTの文字の設定*/
 .main-nav {
     display: flex;
     font-size: 1.25rem;
@@ -54,13 +54,13 @@ img {
     padding: 0 4%;
 }
 
-/*　home
+/*　homes
 --------------------------------*/
-.home-content {
+.homes-content {
     text-align: center;
     margin-top: 10%;
 }
-.home-content p {
+.homes-content p {
     font-size: 1.25rem;
     margin: 10px 0 42px;
 }
@@ -90,23 +90,23 @@ img {
     background-size: cover;
     background-position: center top;
 }
-#home {
+#homes {
     background-image: url(../igm/k.jpg);
     /*background-image: linear-gradient(#c9ffbf, #ffafbd);　グラデーション*/
     min-height: 100vh;
 }
-#home .page-title {
+#homes .page-title {
     text-transform: none;
 }
 
-/* news
+/* home
 ----------------------------------------------------------------------------*/
-#news {
+#home {
     background-image: url(../igm/V.jpg);
     height: 270px;
     margin-bottom: 40px;
 }
-#news .page-title {
+#home .page-title {
     text-align: center;
 }
 
@@ -132,7 +132,7 @@ aside {
     width: 22%;
 }
 
-.news-contents {
+.home-contents {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -230,7 +230,7 @@ aside p {
     }
 
     /*ホーム*/
-    .home-content {
+    .homes-content {
         margin-top: 20%;
     }
     .page-header {
@@ -238,14 +238,14 @@ aside p {
         align-items: center;
     }
     /*ニュース*/
-    .news-contents {
+    .home-contents {
         flex-direction: column;
     }
     .article,
     aside {
         width: 100%;
     }
-    #news .page-title {
+    #home .page-title {
         margin-top: 30px;
     }
     aside {
