@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>パスワード再設定 再設定</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https:fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- アイコン -->
+    <link rel="icon" type="igm/jpg" href="igm/rogo1.png">
 </head>
 <body>
+    <div id="pass_c2.html">
+        <!-- ヘッダー -->
+        <header class="page-header wrapper">
+            <h1><a href="home.html"><img class="logo" src="igm/rogo1.png" alt="ロゴ"></a></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="home.html">rogout</a></li>
+                    <li><a href="menu.html">user</a></li>
+                    <li class="grayout">グレーアウト</li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ここから -->
+        <p class="lead-form">パスワード再設定</p>
+        <form>
+            <div class="item">
+                <label for="pass">　　　パスワード:</label>
+                <input id="pass" type="password" name="pass" placeholder="パスワード">
+            </div>
+            <div class="item">
+                <label for="pass">確認用パスワード:</label>
+                <input id="pass" type="password" name="pass" placeholder="確認用パスワード">
+            </div>
+
+            <div class="btn">
+                <input type="submit" value="決定">
+            </div>
+        </form>
+    </div>
     
 </body>
 </html>

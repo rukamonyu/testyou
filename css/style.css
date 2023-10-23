@@ -19,6 +19,10 @@ img {
 
 /* header
 ------------------------------*/
+.page-header {
+    height: 20%;
+}
+
 /*ロゴ*/
 .logo {
     width: 210px;
@@ -124,18 +128,6 @@ img {
 }
 #home .page-title {
     text-align: center;
-}
-
-/* フッター
----------------------------------------------------------------------------*/
-footer {
-    background: #432;
-    text-align: center;
-    padding: 26px 0;
-}
-footer p {
-    color: #fff;
-    font-size: 0.875rem;
 }
 
 /* 記事部分 */
@@ -335,10 +327,7 @@ aside p {
 
 /*ユーザー情報
 ---------------------------------------------------------------*/
-#user_info1 {
-    background-image: linear-gradient(#c9ffbf, #ffafbd);
-}
-.container {
+#user_info1 .container{
     font-size: 67px;
     margin: 25px auto; /* 左右のマージンを自動調整して中央に配置 */
     margin-top: 50px;
@@ -346,7 +335,7 @@ aside p {
     height: 450px;
     outline: dashed 1px black;
 }
-.container p {
+#user_info1 .container p {
     /* 水平方向の中央揃え */
     text-align: center;
 }
@@ -355,14 +344,116 @@ aside p {
     width: 300px;
     padding-top: 25px;
     padding-left: 25px;
+    border: solid 2px #000; /* ボーダーのスタイルを設定 */
+    padding: 5px; /* ボーダー内の余白を設定 */
+    height: auto;
+    width: 800px; /* テキストボックスの幅を設定 */
     letter-spacing: 0.1em;/*文字の間隔*/
-    line-height: 2.0;/*上下の間隔*/
+    line-height: 1.5;/*上下の間隔*/
     font-size: 20px;
     text-align: left;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
-/*枠組み pass*/
+
+
+input[type="text"] {
+    border: 1px solid #ccc; /* ボーダーのスタイルを設定 */
+    padding: 1px; /* ボーダー内の余白を設定 */
+    width: 150px; /* テキストボックスの幅を設定 */
+}
+input[type="email"] {
+    border: 1px solid #ccc; /* ボーダーのスタイルを設定 */
+    padding: 1px; /* ボーダー内の余白を設定 */
+    width: 150px; /* テキストボックスの幅を設定 */
+    margin: 7px;
+}
 input[type="password"] {
     border: 1px solid #ccc; /* ボーダーのスタイルを設定 */
-    padding: 5px; /* ボーダー内の余白を設定 */
+    padding: 1px; /* ボーダー内の余白を設定 */
     width: 150px; /* テキストボックスの幅を設定 */
-  }
+}
+
+.input-input-text p {
+    margin-right: 10px; /* テキストと入力フィールドの間に余白を設定 */
+}
+
+#menu .page-title {
+    text-align: center;
+}
+
+
+
+/*入力フォーム（pass_c1）
+---------------------------------------------------*/
+
+.lead-form{
+    text-align: center;
+    font-size: 20px;
+}
+
+form {
+    width: 460px;
+    margin: 0 auto;
+    
+}
+
+.item {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.label{
+    float: left;
+    margin-right: 20px;
+    width: 135px;
+    border-left: solid 3px #e0505d;
+    padding-left: 10px;
+}
+
+.inputs{
+    float: left;
+    width: 300px;
+}
+
+input[type="text"],input[type="email"] {
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+/*何故か反映しない　info2のパスワードの枠　*/
+input[type="password"]{
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+textarea {
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    height: 160px;
+    font-size: 15px;
+}
+
+.btn-area{
+    text-align: center;
+}
+
+input[type="submit"] {
+    background: #e0505c;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
